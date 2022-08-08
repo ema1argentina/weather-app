@@ -1,3 +1,6 @@
+Link to test the app:
+https://app.netlify.com/sites/frontend-challenge-08-08-2022/settings/general
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
