@@ -52,13 +52,13 @@ function App() {
       .then(
         (result) => {
           //Set Today's weather object               
-          setCurrent({ day:"Today", temp:(result.list[0].main.temp|0).toString(),icon:selectIcon( result.list[0].weather[0].main ), desc:result.list[0].weather[0].main });
+          setCurrent({ day:"Today", temp:(result.list[0].main.temp|0).toString()+"°",icon:selectIcon( result.list[0].weather[0].main ), desc:result.list[0].weather[0].main });
           //Set weather Forecast array
           setForecast([
-            { day:bringDayName(result.list[5].dt_txt), temp:(result.list[5].main.temp | 0), icon:selectIcon( result.list[5].weather[0].main ) },
-            { day:bringDayName(result.list[10].dt_txt), temp:(result.list[10].main.temp | 0), icon:selectIcon( result.list[10].weather[0].main ) },
-            { day:bringDayName(result.list[15].dt_txt), temp:(result.list[15].main.temp | 0), icon:selectIcon( result.list[15].weather[0].main ) },
-            { day:bringDayName(result.list[20].dt_txt), temp:(result.list[20].main.temp | 0), icon:selectIcon( result.list[20].weather[0].main ) }
+            { day:bringDayName(result.list[5].dt_txt), temp:(result.list[5].main.temp | 0)+"°", icon:selectIcon( result.list[5].weather[0].main ) },
+            { day:bringDayName(result.list[10].dt_txt), temp:(result.list[10].main.temp | 0)+"°", icon:selectIcon( result.list[10].weather[0].main ) },
+            { day:bringDayName(result.list[15].dt_txt), temp:(result.list[15].main.temp | 0)+"°", icon:selectIcon( result.list[15].weather[0].main ) },
+            { day:bringDayName(result.list[20].dt_txt), temp:(result.list[20].main.temp | 0)+"°", icon:selectIcon( result.list[20].weather[0].main ) }
           ]);
           console.log(result);
         },
