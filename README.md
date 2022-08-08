@@ -1,3 +1,13 @@
+# Link to test the app:
+https://app.netlify.com/sites/frontend-challenge-08-08-2022/settings/general
+
+When you first load the app, no weather details are going to be displayed.
+![web01](https://user-images.githubusercontent.com/3343155/183319115-da0685de-cd86-4196-b0a0-4542584d9b07.png)
+
+Once you select one of the cities, the current weather information and forecast is going to be visualized.
+![web02](https://user-images.githubusercontent.com/3343155/183319132-5455a60b-2490-4e08-8fb3-baae1fcbf7e2.png)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
