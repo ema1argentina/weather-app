@@ -51,11 +51,9 @@ function App() {
       .then(res => res.json())
       .then(
         (result) => {
-          //Set Today's weather object
-          let icon_desc = selectIcon( result.list[0].weather[0].main );          
+          //Set Today's weather object               
           setCurrent({ day:"Today", temp:(result.list[0].main.temp|0).toString(),icon:selectIcon( result.list[0].weather[0].main ), desc:result.list[0].weather[0].main });
           //Set weather Forecast array
-          icon_desc = selectIcon(result.list[0].weather[0].main);
           setForecast([
             { day:bringDayName(result.list[5].dt_txt), temp:(result.list[5].main.temp | 0), icon:selectIcon( result.list[5].weather[0].main ) },
             { day:bringDayName(result.list[10].dt_txt), temp:(result.list[10].main.temp | 0), icon:selectIcon( result.list[10].weather[0].main ) },
