@@ -1,5 +1,5 @@
 # Link to test the app:
-https://app.netlify.com/sites/frontend-challenge-08-08-2022/settings/general
+https://frontend-challenge-08-08-2022.netlify.app/
 
 When you first load the app, no weather details are going to be displayed.
 ![web01](https://user-images.githubusercontent.com/3343155/183319115-da0685de-cd86-4196-b0a0-4542584d9b07.png)
